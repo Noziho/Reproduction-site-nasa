@@ -106,7 +106,7 @@ section.general {
     position: relative;
     width: 48%;
     color: black;
-    background-image: url("satelite.PNG");
+    background-image: url("../img/satelite.PNG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@ section.general {
 .sous-div-general {
     position: relative;
     width: 48%;
-    background-image: url("cormercialCrew.PNG");
+    background-image: url("../img/cormercialCrew.PNG");
     height: 250px;
     background-size: cover;
     background-position: center;
@@ -192,7 +192,7 @@ section.general {
 .sous-div-general3, .sous-div-general4,.sous-div-general5, .sous-div-general6, .sous-div-general7, .sous-div-general8, .sous-div-general9, .sous-div-general10 {
     position: relative;
     width: 98%;
-    background-image: url("astrology.PNG");
+    background-image: url("../img/astrology.PNG");
     height: 250px;
     background-size: cover;
     background-position: center;
@@ -201,32 +201,32 @@ section.general {
 
 .sous-div-general4, .sous-div-general6, .sous-div-general7, .sous-div-general8, .sous-div-general9, .sous-div-general10 {
     width: 24%;
-    background-image: url(sarah.PNG);
+    background-image: url(../img/sarah.PNG);
 }
 
 .sous-div-general5 {
     width: 48%;
-    background-image: url(ozone.PNG);
+    background-image: url(../img/ozone.PNG);
 }
 
 .sous-div-general6 {
-    background-image: url(image-of-the-day.PNG);
+    background-image: url(../img/image-of-the-day.PNG);
 }
 
 .sous-div-general7 {
-    background-image: url(webtelescope.PNG);
+    background-image: url(../img/webtelescope.PNG);
 }
 
 .sous-div-general8 {
-    background-image: url(nomination.PNG);
+    background-image: url(../img/nomination.PNG);
 }
 
 .sous-div-general9 {
-    background-image: url(space.PNG);
+    background-image: url(../img/space.PNG);
 }
 
 .sous-div-general10 {
-    background-image: url(batiment.PNG);
+    background-image: url(../img/batiment.PNG);
 }
 
 
