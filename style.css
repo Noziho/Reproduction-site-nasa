@@ -12,13 +12,29 @@ body {
     background: black;
     font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
-
+ /*
+  ** Menu
+  */
 header {
     width: 100%;
     height: 12rem;
     background: black;
     position: fixed;
     top: 0;
+    z-index: 999;
+}
+.fa-search {
+    position: absolute;
+    right: 22rem;
+    top: 2.5rem;
+    color: white;
+    z-index: 999;
+}
+.fa-share-alt {
+    position: absolute;
+    right: 18rem;
+    top: 2.5rem;
+    color: white;
     z-index: 999;
 }
 
@@ -31,11 +47,6 @@ header ul{
     margin-left: 25%;
 }
 
-form {
-    border: none;
-    display: inline-block;
-}
-
 header ul > li {
     display: inline-block;
     color: white;
@@ -46,22 +57,24 @@ header ul > li {
 #NASA-logo {
     position: absolute;
     width: 110px;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-top: 11px;
-
 }
 
-
-input.search::placeholder {
-    color: lightgrey;
+header input {
+    float: right;
+    padding: 1rem;
+    background: rgba(85, 85, 85, 0.8);
+    margin-right: 20rem;
+    margin-top: 10px;
+    border: none;
+    color: white;
 }
-
 .second-bar {
     margin-top: -3rem;
     margin-inline: auto;
     align-content: center;
     text-align: center;
-    font-size: 1.5rem;
 }
 
 .ul2 {
@@ -75,21 +88,25 @@ input.search::placeholder {
 .ul2 li {
     border-right: white 1px solid;
 }
-
+ /*
+  ** Principal section (multiple article)
+  */
 section.general {
     position: relative;
-    border: solid 2px red;
     width: 90%;
     margin-inline: auto;
-    margin-top: 15rem;
+    margin-top: 13rem;
 }
+
+/*
+** First principal bloc
+*/
 
 .first-general-div {
     position: relative;
-    border: solid 2px red;
     width: 48%;
     color: black;
-    background-image: url("test.PNG");
+    background-image: url("satelite.PNG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,6 +114,7 @@ section.general {
     font-size: 1.8rem;
     display: inline-block;
 }
+
 
 .first-general-div p {
     position: absolute;
@@ -107,9 +125,11 @@ section.general {
     font-weight: bold;
 }
 
+ /*
+ ** Second principal bloc
+ */
 .second-general-div {
     position: relative;
-    border: solid 2px red;
     width: 48%;
     color: black;
     font-size: 1.8rem;
@@ -119,7 +139,6 @@ section.general {
 
 .sous-div-general {
     position: relative;
-    border: white solid 1px;
     width: 48%;
     background-image: url("cormercialCrew.PNG");
     height: 250px;
@@ -134,23 +153,21 @@ section.general {
     width: 100%;
     height: 20%;
     font-weight: bold;
-
 }
 
 .sous-div-general2 {
     position: relative;
-    border: white solid 1px;
     width: 48%;
     display: inline-block;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background: #39719e;
     padding-inline: 10px;
-    top: -7px;
+
 
 }
 .sous-div-general2 p {
-    margin-top: 9px;
+   margin-top:  0.5rem;
 }
 
 .sous-div-general2 > p >a {
@@ -161,4 +178,160 @@ section.general {
 
 .sous-div-general2 > p >a:hover {
     text-decoration-line: underline;
+}
+
+#p-inline-block {
+    display: inline-block;
+}
+
+#p-inline {
+    display: inline;
+    float: right;
+}
+
+.sous-div-general3, .sous-div-general4,.sous-div-general5, .sous-div-general6, .sous-div-general7, .sous-div-general8, .sous-div-general9, .sous-div-general10 {
+    position: relative;
+    width: 98%;
+    background-image: url("astrology.PNG");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.sous-div-general4, .sous-div-general6, .sous-div-general7, .sous-div-general8, .sous-div-general9, .sous-div-general10 {
+    width: 24%;
+    background-image: url(sarah.PNG);
+}
+
+.sous-div-general5 {
+    width: 48%;
+    background-image: url(ozone.PNG);
+}
+
+.sous-div-general6 {
+    background-image: url(image-of-the-day.PNG);
+}
+
+.sous-div-general7 {
+    background-image: url(webtelescope.PNG);
+}
+
+.sous-div-general8 {
+    background-image: url(nomination.PNG);
+}
+
+.sous-div-general9 {
+    background-image: url(space.PNG);
+}
+
+.sous-div-general10 {
+    background-image: url(batiment.PNG);
+}
+
+
+.sous-div-general3 p,.sous-div-general4 p, .sous-div-general5 p, .sous-div-general6 p, .sous-div-general7 p, .sous-div-general8 p, .sous-div-general9 p, .sous-div-general10 p {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    width: 100%;
+    height: 14%;
+    font-weight: bold;
+}
+
+.sous-div-general7 p, .sous-div-general8 p, .sous-div-general9, .sous-div-general10 {
+    font-size: 1.5rem;
+}
+
+.third-general-div {
+    position: relative;
+    width: 98%;
+    color: black;
+    font-size: 1.8rem;
+    display: inline-block;
+}
+
+/*
+  ** More description for article
+  */
+#blue-font {
+    position: absolute;
+    background: rgba(93, 127, 185, 0.8);
+    bottom: 50px;
+    width: 40%;
+    height: 10%;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#blue-font-2, #blue-font-3, #blue-font-4, #blue-font-5, #blue-font-6 {
+    position: absolute;
+    background: rgba(93, 127, 185, 0.8);
+    bottom: 36px;
+    width: 20%;
+    height: 10%;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+#blue-font-3 {
+    width: 15%;
+}
+
+#blue-font-4 {
+    width: 40%;
+}
+
+#blue-font-5, #blue-font-6 {
+    width: 30%;
+}
+ /*
+  ** button and footer
+  */
+
+
+button {
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+    background: #15418C;
+    width: 90%;
+    padding: 1rem;
+    margin-inline: 4%;
+    border: none;
+}
+
+
+footer {
+    background: black;
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+    color: white;
+    padding-bottom: 4%;
+}
+footer img {
+    float: left;
+    padding: 5px;
+    width: 6%;
+    margin-left: 5%;
+}
+
+footer p {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+footer ul,li {
+    display: inline-block;
+    padding: 15px;
+    color: #5d7fb9;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+footer ul {
+    margin-left: 20%;
 }
