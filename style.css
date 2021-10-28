@@ -19,6 +19,7 @@ header {
     background: black;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 header ul{
@@ -50,10 +51,6 @@ header ul > li {
 
 }
 
-.general {
-    margin-top: 12rem;
-    margin-inline: auto;
-}
 
 input.search::placeholder {
     color: lightgrey;
@@ -79,60 +76,89 @@ input.search::placeholder {
     border-right: white 1px solid;
 }
 
-
-#no-border2, #no-border {
-    border: none;
-}
-
-#search {
-    position: absolute;
-    width: 13%;
-    margin-right: 12rem;
-    margin-top: 0.5%;
-}
-
-section{
+section.general {
+    position: relative;
+    border: solid 2px red;
     width: 90%;
-}
-.inline-block {
-    display: inline-block;
+    margin-inline: auto;
+    margin-top: 15rem;
 }
 
-.first-div-section {
+.first-general-div {
+    position: relative;
+    border: solid 2px red;
     width: 48%;
-    height: 60rem;
+    color: black;
+    background-image: url("test.PNG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    font-size: 1.8rem;
     display: inline-block;
 }
 
-#satelite {
+.first-general-div p {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    bottom: 0;
     width: 100%;
+    height: 7%;
+    font-weight: bold;
 }
 
-
-
-#commercial {
-    width: 49%;
+.second-general-div {
+    position: relative;
+    border: solid 2px red;
+    width: 48%;
+    color: black;
+    font-size: 1.8rem;
+    display: inline-block;
+    top: 0;
 }
 
-#events{
-    width: 49%;
+.sous-div-general {
+    position: relative;
+    border: white solid 1px;
+    width: 48%;
+    background-image: url("cormercialCrew.PNG");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
 }
-
-#astrology {
+.sous-div-general p {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    bottom: 0;
     width: 100%;
-}
-
-.second-div-section {
-    width: 100%;
+    height: 20%;
+    font-weight: bold;
 
 }
 
-.image-24 {
-    width: 24%;
+.sous-div-general2 {
+    position: relative;
+    border: white solid 1px;
+    width: 48%;
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    background: #39719e;
+    padding-inline: 10px;
+    top: -7px;
+
+}
+.sous-div-general2 p {
+    margin-top: 9px;
 }
 
-#blackHoles {
-    width:49% ;
+.sous-div-general2 > p >a {
+    color: white;
+    text-decoration-line: none;
 }
 
 
+.sous-div-general2 > p >a:hover {
+    text-decoration-line: underline;
+}
